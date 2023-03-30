@@ -1,0 +1,114 @@
+@use 'mixins';
+
+.background__container{
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    background: url('../public/hotel-mulia-senayan-jakarta.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background__overlay{
+    width: 100%;
+    height: 100dvh;
+    background: linear-gradient(180deg, #232323 0%, #232323 0.01%, rgba(0, 0, 0, 0) 79.09%);
+    position: absolute;
+}
+
+
+.landing__container{
+    width: 100%;
+    height: 100dvh;
+    position: absolute;
+    padding-inline: 2.4rem;
+
+    .logo__container{
+        width: 100%;
+        height: auto;
+        @include mixins.position(center,center);
+        margin-top: 3.2rem; 
+    }
+
+    .main__header{
+        @include mixins.font('Satoshi');
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--secondaryColor);
+        text-align: center;
+        margin-top: 5.2rem;
+    }
+
+    .sec__header__container{
+        width: 100%;
+        height: fit-content;
+        @include mixins.position(center,center);
+        flex-direction: column;
+        margin-top: 11.9rem;
+        
+        h2{
+            @include mixins.font('Satoshi');
+            color: var(--secondaryColor);
+
+            &:first-child{
+                font-size: 3.2rem;
+                font-weight: 400;
+                text-transform: uppercase;
+            }
+
+            &:last-child{
+                font-size: 3.6rem;
+                font-weight: 700;
+                text-transform: uppercase;
+
+                span{
+                    font-size: 3.6rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .paragraf__container{
+        width: 100%;
+        height: fit-content;
+        @include mixins.position(center,center);
+        margin-top: 1.6rem;
+
+        .paragraf{
+            @include mixins.font('Quicksand');
+            font-weight: 500;
+            font-size: 1.6rem;
+            color: var(--secondaryColor);
+            text-align: center;
+            width: 75%;
+        }
+    }
+
+    .landing__cta{
+        width: 100%;
+        height: fit-content;
+        @include mixins.position(center,center);
+        margin-top: 3.2rem;
+
+        .cta{
+            width: 50%;
+            height: fit-content;
+            padding: 1.2rem 2.4rem;
+            background: var(--tertierColor);
+            border-radius: 1.6rem;
+            @include mixins.position(center,center);
+
+            p{
+                @include mixins.font('Quicksand');
+                font-size: 1.6rem;
+                font-weight: 700;
+                color: var(--primaryColor);
+            }
+        }
+    }
+
+}
