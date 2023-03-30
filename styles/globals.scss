@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Satoshi';
+    src: url('../public/font/Satoshi-Regular.woff');
+    font-family: 'Quicksand';
+    src: url('../public/font/Quicksand-Regular.woff');
+}
+
+:root{
+    --primaryColor : #232323;
+    --secondaryColor : #f1f0f0;
+    --tertierColor : #D7B865;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: calc(.625 * 16px);
+}
+
+a{
+    text-decoration: none;
+}
